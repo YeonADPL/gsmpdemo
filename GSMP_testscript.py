@@ -21,14 +21,14 @@ try:
     """)
     
     try:
-        with open("customrule.pdf",  "rb") as f:
+        with open("InteractiveDiceRoller.pdf",  "rb") as f:
             file_data = f.read()
         
         msg.add_attachment(
             file_data,
             maintype="application",
             subtype="pdf",
-            filename="customrule.pdf"
+            filename="InteractiveDiceRoller.pdf"
         )
     
     except FileNotFoundError:
